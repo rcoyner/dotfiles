@@ -1,0 +1,42 @@
+# Colors
+# http://en.wikipedia.org/wiki/ANSI_escape_code#Colors
+
+*background: #000000
+*foreground: #e9ebeb
+*fading: 40
+
+*color0:  #000000
+*color1:  #c23621
+*color2:  #25bc24
+*color3:  #adad27
+*color4:  #492ee1
+*color5:  #d338d3
+*color6:  #33bbc8
+*color7:  #cbcccd
+*color8:  #818383
+*color9:  #fc391f
+*color10: #31e722
+*color11: #eaec23
+*color12: #5137ff
+*color13: #f935f8
+*color14: #14f0f0
+*color15: #e9ebeb
+
+# URxvt Settings
+URxvt*cursorBlink: true
+URxvt*dynamicColors: on
+URxvt*font: xft:Droid Sans Mono:pixelsize=12
+URxvt*imLocale: en_US.UTF-8
+URxvt*termName: rxvt-256color
+URxvt*title: urxvt
+URxvt*urgentOnBell: false
+URxvt*visualBell: false
+URxvt*xftAntialias: true
+URxvt.borderless: false
+URxvt.scrollBar: false
+
+# Perl Extensions
+# https://wiki.archlinux.org/index.php/rxvt-unicode
+URxvt.matcher.button: 1
+URxvt.perl-ext-common: default,clipboard,matcher
+URxvt.url-launcher: chromium
