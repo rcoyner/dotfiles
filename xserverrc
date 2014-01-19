@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Disable TCP access to the X server. Remote applications should tunnel X11
+# over ssh if it needs to display on the X server.
+exec /usr/bin/X -nolisten tcp "$@"

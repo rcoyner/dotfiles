@@ -1,0 +1,9 @@
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+[log]
+    decorate = true
+[user]
+    email = rcoyner@gmail.com
+    name = Ryan Coyner
