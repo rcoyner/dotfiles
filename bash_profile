@@ -60,6 +60,13 @@ if [ -n "$DISPLAY" ]; then
     fi
 fi
 
+if [ -f /usr/bin/virtualenvwrapper.sh ]; then
+    export PROJECT_HOME=$HOME/src
+    export WORKON_HOME=$HOME/.virtualenvs
+    export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
+    source /usr/bin/virtualenvwrapper.sh
+fi
+
 if [ -d /usr/local/bin ]; then
     export PATH=/usr/local/bin:$PATH
 fi
