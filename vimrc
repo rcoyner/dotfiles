@@ -20,6 +20,9 @@ set cmdheight=3
 " character limits.
 set colorcolumn=+1
 
+" List of directory names for the swap file, separated with commas.
+set directory=/var/tmp//,.
+
 " Sets the character encoding used inside Vim.
 set encoding=UTF-8
 
