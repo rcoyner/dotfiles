@@ -1,3 +1,4 @@
+DIRCOLORS_DIR=`which dircolors`
 LESS_DIR=`which less`
 KEYCHAIN_DIR=`which keychain`
 VIM_DIR=`which vim`
@@ -9,6 +10,10 @@ if [[ `uname -s` == 'Darwin' ]]; then
     COLORFLAG='-G'
 else
     COLORFLAG='--color=auto'
+fi
+
+if [ -d $DIRCOLORS_DIR ]; then  # outputs bash code to set LS_COLORS
+    eval `dircolors --bourne-shell`
 fi
 
 # Default Aliases
