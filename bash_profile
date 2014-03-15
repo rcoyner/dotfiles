@@ -3,8 +3,7 @@ LESS_DIR=`which less`
 KEYCHAIN_DIR=`which keychain`
 VIM_DIR=`which vim`
 
-# Append to the history file instead of overwriting it
-shopt -s histappend
+shopt -s histappend  # append to the history file instead of overwriting it
 
 if [[ `uname -s` == 'Darwin' ]]; then
     COLORFLAG='-G'
