@@ -19,9 +19,6 @@ alias mv='mv -vi'
 alias psfind='ps aux |grep'
 alias rm='rm -vi'
 
-# Arch Linux Aliases
-alias pacman='sudo pacman'
-
 # Git Aliases
 alias gap='git add --patch'
 alias gb='git branch'
