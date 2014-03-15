@@ -1,3 +1,5 @@
+[alias]
+    ignored = ls-files --exclude-standard --ignored --others
 [color]
     branch = auto
     diff = auto
