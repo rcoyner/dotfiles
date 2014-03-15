@@ -1,3 +1,7 @@
+LESS_DIR=`which less`
+KEYCHAIN_DIR=`which keychain`
+VIM_DIR=`which vim`
+
 # Append to the history file instead of overwriting it
 shopt -s histappend
 
@@ -39,8 +43,6 @@ bind 'set bell-style visible' # screen flashes instead of beeping
 HISTIGNORE='cd:dir:history:l:la:ll:ls:su:clear'
 history_control=ignoredups
 
-LESS_DIR=`which less`
-VIM_DIR=`which vim`
 export EDITOR="$VIM_DIR"
 export PAGER="$LESS_DIR"
 export VISUAL="$VIM_DIR"
@@ -104,8 +106,7 @@ if [ -d /usr/bin/pip ]; then
     export PIP_RESPECT_VIRTUALENV=true
 fi
 
-KEYCHAIN_DIR=`which keychain`
-if [ $? -eq 0 ]; then
+if [ -d $KEYCHAIN_DIR ]; then
     $KEYCHAIN_DIR -Q -q ~/.ssh/id_rsa
     [[ -f ~/.keychain/$HOSTNAME-sh ]] && source ~/.keychain/$HOSTNAME-sh
 fi
