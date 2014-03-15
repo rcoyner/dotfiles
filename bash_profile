@@ -1,7 +1,7 @@
-DIRCOLORS_DIR=`which dircolors`
-LESS_DIR=`which less`
-KEYCHAIN_DIR=`which keychain`
-VIM_DIR=`which vim`
+DIRCOLORS_PATH=`which dircolors`
+LESS_PATH=`which less`
+KEYCHAIN_PATH=`which keychain`
+VIM_PATH=`which vim`
 
 shopt -s histappend  # append to the history file instead of overwriting it
 
@@ -11,7 +11,7 @@ else
     COLORFLAG='--color=auto'
 fi
 
-if [ -d $DIRCOLORS_DIR ]; then  # outputs bash code to set LS_COLORS
+if [ -f $DIRCOLORS_PATH ]; then  # outputs bash code to set LS_COLORS
     eval `dircolors --bourne-shell`
 fi
 
@@ -47,9 +47,9 @@ bind 'set bell-style visible' # screen flashes instead of beeping
 HISTIGNORE='cd:dir:history:l:la:ll:ls:su:clear'
 history_control=ignoredups
 
-export EDITOR="$VIM_DIR"
-export PAGER="$LESS_DIR"
-export VISUAL="$VIM_DIR"
+export EDITOR="$VIM_PATH"
+export PAGER="$LESS_PATH"
+export VISUAL="$VIM_PATH"
 
 if [ -n "$DISPLAY" ]; then
     # Arch Linux
@@ -110,7 +110,7 @@ if [ -d /usr/bin/pip ]; then
     export PIP_RESPECT_VIRTUALENV=true
 fi
 
-if [ -d $KEYCHAIN_DIR ]; then
-    $KEYCHAIN_DIR -Q -q ~/.ssh/id_rsa
+if [ -f $KEYCHAIN_PATH ]; then
+    $KEYCHAIN_PATH -Q -q ~/.ssh/id_rsa
     [[ -f ~/.keychain/$HOSTNAME-sh ]] && source ~/.keychain/$HOSTNAME-sh
 fi
