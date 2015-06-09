@@ -1,0 +1,4 @@
+--color
+--sort-files
+--pager=/usr/bin/less -r
+--type-add=css=scss
