@@ -90,7 +90,7 @@ set wildmode=list:longest
 
 " Ignore the following file patterns. Intended to be used with Command-T to
 " only display source files.
-set wildignore=*.a,*.aac,*.ai,*.aif,*.aiff,*.als,*.apk,*.aup,*.avi,*.band,*.bmp,*.class,*.db,*.dex,*.dll,*.doc,*.dylib,*.eps,*.exe,*.flac,*.flv,*.gif,*.iso,*.itdb,*.itl,*.jar,*.jpeg,*.jpg,*.m4a,*.mid,*.mkv,*.mov,*.mp3,*.mp4,*.mpeg,*.mpg,*.o,*.ogg,*.otf,*.pdf,*.png,*.psd,*.pyc,*.pyo,*.rar,*.raw,*.so,*.tif,*.tiff,*.torrent,*.torrent,*.ttf,*.wav,*.wmv,*.woff,*.xcf,*.xls,*.zip
+set wildignore=*.a,*.aac,*.ai,*.aif,*.aiff,*.als,*.apk,*.aup,*.avi,*.band,*.bmp,*.class,*.db,*.dex,*.dll,*.doc,*.dylib,*.eps,*.exe,*.flac,*.flv,*.gif,*.iso,*.itdb,*.itl,*.jar,*.jpeg,*.jpg,*.m4a,*.mid,*.mkv,*.mov,*.mp3,*.mp4,*.mpeg,*.mpg,*.o,*.ogg,*.otf,*.pdf,*.png,*.psd,*.pyc,*.pyo,*.rar,*.raw,*.so,*.tif,*.tiff,*.torrent,*.torrent,*.ttf,*.wav,*.wmv,*.woff,*.xcf,*.xls,*.zip,node_modules/**
 
 " Enable syntax highlighting and search highlighting if colors are available.
 " &t_Co is an empty value in the GUI version of MacVim, and therefore the has()
