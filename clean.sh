@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 rm -fv ~/.Xdefaults
+rm -fv ~/.ackrc
 rm -fv ~/.bash_profile
 rm -fv ~/.bashrc
 rm -fv ~/.gitconfig
