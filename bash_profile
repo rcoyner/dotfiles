@@ -1,7 +1,7 @@
-DIRCOLORS_PATH=`which dircolors`
-LESS_PATH=`which less`
-KEYCHAIN_PATH=`which keychain`
-VIM_PATH=`which vim`
+DIRCOLORS_PATH=`command -v dircolors`
+LESS_PATH=`command -v less`
+KEYCHAIN_PATH=`command -v keychain`
+VIM_PATH=`command -v vim`
 
 shopt -s histappend  # append to the history file instead of overwriting it
 
