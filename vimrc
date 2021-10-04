@@ -38,8 +38,8 @@ set ignorecase
 " Do not dynamically find as you type
 set incsearch
 
-" Display each line with its line number.
-set number
+" Display each line with its relative line number.
+set relativenumber
 
 " Toggle to paste mode.
 set pastetoggle=<F10>
