@@ -116,3 +116,12 @@ if [ -f $KEYCHAIN_PATH ]; then
     $KEYCHAIN_PATH -Q -q ~/.ssh/id_rsa
     [[ -f ~/.keychain/$HOSTNAME-sh ]] && source ~/.keychain/$HOSTNAME-sh
 fi
+
+# Informs GPG which terminal it is executing to prompt for a passphrase.
+GPG_TTY=$(tty)
+export GPG_TTY
+
+# Allow for GPG to be used under a SSH.
+if [ -n "$SSH_CONNECTION" ]; then
+    export PINENTRY_USER_DATA="USE_CURSES=1"
+fi
