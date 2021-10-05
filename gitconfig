@@ -4,8 +4,9 @@
     branch = auto
     diff = auto
     interactive = auto
+[commit]
+    gpgsign = true
+[include]
+    path = ~/.gitconfig_private
 [log]
     decorate = true
-[user]
-    email = rcoyner@gmail.com
-    name = Ryan Coyner
