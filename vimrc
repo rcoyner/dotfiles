@@ -92,6 +92,12 @@ set wildmode=list:longest
 " only display source files.
 set wildignore=*.a,*.aac,*.ai,*.aif,*.aiff,*.als,*.apk,*.aup,*.avi,*.band,*.bmp,*.class,*.db,*.dex,*.dll,*.doc,*.dylib,*.eps,*.exe,*.flac,*.flv,*.gif,*.iso,*.itdb,*.itl,*.jar,*.jpeg,*.jpg,*.m4a,*.mid,*.mkv,*.mov,*.mp3,*.mp4,*.mpeg,*.mpg,*.o,*.ogg,*.otf,*.pdf,*.png,*.psd,*.pyc,*.pyo,*.rar,*.raw,*.so,*.tif,*.tiff,*.torrent,*.torrent,*.ttf,*.wav,*.wmv,*.woff,*.xcf,*.xls,*.zip,node_modules/**
 
+" Setup package management.
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+call vundle#end()
+
 " Enable syntax highlighting and search highlighting if colors are available.
 " &t_Co is an empty value in the GUI version of MacVim, and therefore the has()
 " variation is also included.
@@ -115,6 +121,3 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
-
-call pathogen#infect()
-call pathogen#helptags()
