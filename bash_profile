@@ -11,8 +11,10 @@ else
     COLORFLAG='--color=auto'
 fi
 
-if [ -f $DIRCOLORS_PATH ]; then  # outputs bash code to set LS_COLORS
-    eval `dircolors --bourne-shell`
+if [ ! -z $DIRCOLORS_PATH]; then
+    if [ -x "$DIRCOLORS_PATH" ]; then  # outputs bash code to set LS_COLORS
+        eval `dircolors --bourne-shell`
+    fi
 fi
 
 # Default Aliases
