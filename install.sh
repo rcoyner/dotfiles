@@ -16,7 +16,6 @@ fi
 
 mkdir -pv ~/.vim/backup
 
-ln -fsv $DIR/ackrc ~/.ackrc
 ln -fsv $DIR/bash_profile ~/.bash_profile
 ln -fsv $DIR/bashrc ~/.bashrc
 ln -fsv $DIR/gitconfig ~/.gitconfig
