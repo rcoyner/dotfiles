@@ -14,6 +14,7 @@ if [[ "$UNAME" == 'Linux' ]]; then
     ln -fsv $DIR/xserverrc ~/.xserverrc
 fi
 
+mkdir -pv ~/.ssh
 mkdir -pv ~/.vim/backup
 
 ln -fsv $DIR/bash_profile ~/.bash_profile
