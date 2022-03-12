@@ -14,12 +14,14 @@ if [[ "$UNAME" == 'Linux' ]]; then
     ln -fsv $DIR/xserverrc ~/.xserverrc
 fi
 
+mkdir -pv ~/.gnupg
 mkdir -pv ~/.ssh
 mkdir -pv ~/.vim/backup
 
 ln -fsv $DIR/bash_profile ~/.bash_profile
 ln -fsv $DIR/bashrc ~/.bashrc
 ln -fsv $DIR/gitconfig ~/.gitconfig
+ln -fsv $DIR/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 ln -fsv $DIR/screenrc ~/.screenrc
 ln -fsv $DIR/tmux.conf ~/.tmux.conf
 ln -fsv $DIR/vimrc ~/.vimrc
