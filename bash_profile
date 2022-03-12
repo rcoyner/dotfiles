@@ -37,7 +37,7 @@ alias gd='git diff'
 alias gdc='git diff --cached'
 alias gl='git log'
 alias gs='git status'
-alias gpom='git push origin master'
+alias gpom='git push origin main'
 
 export PS1='\033[0;36m\u@\h:\033[0;33m\w\033[0;36m\$\033[0;37m '
 
