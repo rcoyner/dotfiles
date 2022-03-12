@@ -88,6 +88,10 @@ if [ -d /usr/bin/vendor_perl ]; then
     export PATH=/usr/bin/vendor_perl:$PATH
 fi
 
+if [ -d ~/go/bin ]; then
+	export PATH=~/go/bin:$PATH
+fi
+
 if [ -d ~/opt/android-studio/sdk ]; then
     export ANDROID_HOME=~/opt/android-studio/sdk
 fi
