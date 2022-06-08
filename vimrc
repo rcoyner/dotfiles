@@ -96,6 +96,10 @@ set wildignore=*.a,*.aac,*.ai,*.aif,*.aiff,*.als,*.apk,*.aup,*.avi,*.band,*.bmp,
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'evanleck/vim-svelte'
+Plugin 'lifepillar/pgsql.vim'
+Plugin 'othree/html5.vim'
+Plugin 'pangloss/vim-javascript'
 call vundle#end()
 
 " Enable syntax highlighting and search highlighting if colors are available.
@@ -114,7 +118,11 @@ filetype plugin indent on
 
 " Highlight trailing spaces.
 au Syntax * syn match Error /\s\+$\| \ze\t/
-au Syntax * syn match Error /\t/
+"au Syntax * syn match Error /\t/
+au Syntax *\(go\)\@<! syn match Error /\t/
+
+au BufNewFile,BufRead *.go setlocal noexpandtab
+let g:sql_type_default = 'pgsql'
 
 " Easy window navigation
 map <C-h> <C-w>h
