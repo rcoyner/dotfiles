@@ -133,3 +133,12 @@ export GPG_TTY
 if [ -n "$SSH_CONNECTION" ]; then
     export PINENTRY_USER_DATA="USE_CURSES=1"
 fi
+
+if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+    source /usr/local/etc/bash_completion.d/git-completion.bash
+fi
+
+if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
+    source /usr/local/etc/bash_completion.d/git-prompt.sh
+    export PS1='\033[0;36m\u@\h:\033[0;33m\w\033[0;31m$(__git_ps1 " (%s)")\033[0;36m\$\033[0;37m '
+fi
