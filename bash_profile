@@ -116,6 +116,10 @@ if [ -d /usr/bin/pip ]; then
     export PIP_RESPECT_VIRTUALENV=true
 fi
 
+if [ -d ~/.cargo/bin ]; then
+    export PATH=~/.cargo/bin:$PATH
+fi
+
 if [ -f $KEYCHAIN_PATH ]; then
     $KEYCHAIN_PATH -Q -q ~/.ssh/id_rsa
     [[ -f ~/.keychain/$HOSTNAME-sh ]] && source ~/.keychain/$HOSTNAME-sh
