@@ -90,7 +90,7 @@ set wildmode=list:longest
 
 " Ignore the following file patterns. Intended to be used with Command-T to
 " only display source files.
-set wildignore=*.a,*.aac,*.ai,*.aif,*.aiff,*.als,*.apk,*.aup,*.avi,*.band,*.bmp,*.class,*.db,*.dex,*.dll,*.doc,*.dylib,*.eps,*.exe,*.flac,*.flv,*.gif,*.iso,*.itdb,*.itl,*.jar,*.jpeg,*.jpg,*.m4a,*.mid,*.mkv,*.mov,*.mp3,*.mp4,*.mpeg,*.mpg,*.o,*.ogg,*.otf,*.pdf,*.png,*.psd,*.pyc,*.pyo,*.rar,*.raw,*.so,*.tif,*.tiff,*.torrent,*.torrent,*.ttf,*.wav,*.wmv,*.woff,*.xcf,*.xls,*.zip,node_modules/**
+set wildignore=*.a,*.aac,*.ai,*.aif,*.aiff,*.als,*.apk,*.aup,*.avi,*.band,*.bmp,*.class,*.db,*.dex,*.dll,*.doc,*.dylib,*.eps,*.exe,*.flac,*.flv,*.gif,*.iso,*.itdb,*.itl,*.jar,*.jpeg,*.jpg,*.m4a,*.mid,*.mkv,*.mov,*.mp3,*.mp4,*.mpeg,*.mpg,*.o,*.ogg,*.otf,*.pdf,*.png,*.psd,*.pyc,*.pyo,*.rar,*.raw,*.so,*.tif,*.tiff,*.torrent,*.torrent,*.ttf,*.wav,*.wmv,*.woff,*.xcf,*.xls,*.zip,*/node_modules
 
 " Setup package management.
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -100,6 +100,10 @@ Plugin 'evanleck/vim-svelte'
 Plugin 'lifepillar/pgsql.vim'
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'fatih/vim-go'
+Plugin 'christoomey/vim-sort-motion'
+Plugin 'wincent/command-t'
 call vundle#end()
 
 " Enable syntax highlighting and search highlighting if colors are available.
@@ -108,9 +112,10 @@ call vundle#end()
 "
 " See Also: :help has()
 if &t_Co > 2 || has("gui_running")
-    colorscheme desert
-    syntax on
+    colorscheme solarized
+    set background=dark
     set hlsearch
+    syntax on
 endif
 
 " Enable indentation based on filetype.
