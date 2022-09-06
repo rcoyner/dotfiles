@@ -96,13 +96,15 @@ set wildignore=*.a,*.aac,*.ai,*.aif,*.aiff,*.als,*.apk,*.aup,*.avi,*.band,*.bmp,
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'christoomey/vim-sort-motion'
+Plugin 'earthly/earthly.vim'
 Plugin 'evanleck/vim-svelte'
+Plugin 'fatih/vim-go'
+Plugin 'jvirtanen/vim-hcl'
 Plugin 'lifepillar/pgsql.vim'
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'fatih/vim-go'
-Plugin 'christoomey/vim-sort-motion'
 Plugin 'wincent/command-t'
 call vundle#end()
 
