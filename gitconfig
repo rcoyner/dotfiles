@@ -10,3 +10,4 @@
     path = ~/.gitconfig_private
 [log]
     decorate = true
+    showSignature = true
