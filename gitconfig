@@ -18,3 +18,5 @@
 [log]
     decorate = true
     showSignature = true
+[url "ssh://git@github.com/"]
+    insteadOf = https://github.com/
